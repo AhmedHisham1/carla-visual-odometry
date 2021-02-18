@@ -11,7 +11,7 @@ this is an implementation of visual odometry using stereo camera within CARLA si
 # Results
 #### [Youtube Video](https://youtu.be/pvq0h9L-e7Q)
 #### Screenshots:
-![result image](images\res.jpg)
+![result image](\images\res.jpg)
 
 
 # Solution Steps
@@ -24,7 +24,7 @@ this is an implementation of visual odometry using stereo camera within CARLA si
  2. Matching is done using a brute force matcher. Matches are filtered according to a distance threshold to remove ambigous matches.
 
 ## 3. Motion Estimation:
-![3D to 2D motion estimation](images\3d-2d.jpg)
+![3D to 2D motion estimation](\images\3d-2d.jpg)
 
 Using the calculated depth and the matches between the `t-1` and `t` frames the motion is estimated as follows:
 1. Three values are inputed to the `cv2.solvePnPRansac()` solver:
